@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pain Relief In Labour Survey</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <h1 id="title">Pain Relief In Labour Survey.</h1>
+      <p id="description">Please complete this survey to help improve our services.</p>
+    </body>
+    <form action="http://pain-releif-survey.swbhnhs,org" method="post" id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name:<input id="name" type="text" placeholder="Enter Name" required></label>
+      <label for="email" id="email-label">Email:<input id="email"  type="email" placeholder="Enter Email" required></label>
+      <label for="number" id="number-label">Hospital Number:<input id="number" type="number" max="999999" min="100000" placeholder="Enter your hospital number (6 digits) E.g 123456" required></label>
+    </fieldset>
+    <fieldset>
+      <label for="deliver-type">How Was Your Baby Delivered?<select id="dropdown" name="delivery-type">
+        <option value="">(select one)</option>
+        <option value="1">Normal vaginal delivery.</option>
+        <option value="2">Waterbirth.</option>
+        <option value="3">Ventouse delivery.</option>
+        <option value="4">Foreceps delivery.</option>
+        <option value="5">Elective caserean section.</option>
+        <option value="6">Emergency caserean section.</option>
+        </select>
+      </label>
+      </fieldset>
+      <fieldset>
+      <label for="pain-relief-used">What Pain Relief Options Did You Use? (choose all that apply)<input type="checkbox" value="none">None <input type="checkbox" value="entonox">Entonox <input type="checkbox" value="pethidine">Pethidine <input type="checkbox" value="morphine">Morphine <input type="checkbox" value="epidural">Epidural <input type="checkbox" value="spinal">Spinal</label>
+    </fieldset>
+    <fieldset>
+      <label for="effective">Do You Feel Your Pain Relief Was Effective?<input type="radio" class="inline" name="effective" value="E.yes">Yes <input type="radio" class="inline" name="effective" value="E.no"  >No</label>
+      </fieldset>
+      <fieldset>
+      <label for="options">Do You Feel You Were Aware Of All The Pain Relief Options Available To You?<input type="radio" class="inline" name="options" value="O.yes">Yes <input type="radio" class="inline" name="options" value="O.no">No</label>
+      </fieldset>
+      <label for="comment">Please add any Comments or Suggestions You may have.<textarea id="comment" name="comment" rows="4" cols="40" placeholder="Enter text here"></textarea> </label>
+    <input type="submit" value="submit" id="submit">
+    </form>
+  </body>
+</html> 
